@@ -37,7 +37,7 @@ sudo tljh-config add-item users.allowed <NEW USER>
 sudo tljh-config reload
 ```
 
-When logging in with this new user, the repo should be available within the subfolder "repos"
+When logging in with this new user, the repo should be available in the home directory of the user within a subfolder "repos"
 
 ## Example
 
