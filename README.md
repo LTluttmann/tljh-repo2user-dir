@@ -39,6 +39,10 @@ sudo tljh-config reload
 
 When logging in with this new user, the repo should be available within the subfolder "repos"
 
+## Example
+
+An example usage of this plugin can be found [here](https://github.com/LTluttmann/tdi23/blob/7247fb875beab8e41246180c1b3d502bd745dbf2/jupyterhub/tf/cloud_init/setup_env.sh)
+
 ## License
 
 We use a shared copyright model that enables all contributors to maintain the
