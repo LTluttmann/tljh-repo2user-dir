@@ -10,7 +10,7 @@ To deploy a new TLJH instance with this plugin installed simply call
 #!/bin/bash
 curl -L https://tljh.jupyter.org/bootstrap.py \
   | sudo python3 - \
-    --admin tdi2023 --plugin git+https://github.com/LTluttmann/tljh-repo2user-dir.git
+    --admin <USER> --plugin git+https://github.com/LTluttmann/tljh-repo2user-dir.git
 ```
 
 and define the env variable REPO_URL with the repo of your choice. Setting up the environment variable can be a little cumbersome since it is needed in the root environment. One way is to override the `jupyterhub` settings as specified [here](https://github.com/jupyterhub/the-littlest-jupyterhub/blob/4aa96d92c32428a98fe60489e38a43114773468d/docs/howto/admin/systemd.md?plain=1#L39)
