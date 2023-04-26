@@ -2,8 +2,6 @@ import os
 import shutil
 from pwd import getpwnam
 from git import Repo
-from tljh.utils import get_plugin_manager
-from tljh.normalize import generate_system_username
 from tljh.hooks import hookimpl
 
 
