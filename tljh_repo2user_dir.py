@@ -37,7 +37,7 @@ def tljh_new_user_create(username):
     logger.info("Gonna clone for user %s" % username)
     user_root_dir = os.path.join("/home", username)
     # get repo url from environment variable
-    git_url = "https://github.com/LTluttmann/tljh-repo2user-dir.git" # os.getenv('REPO_URL')
+    git_url = os.getenv("REPO_URL", "https://github.com/LTluttmann/tljh-repo2user-dir.git")
     # nothing to do if no repo is specified
     if git_url is None:
         logger.warning("No repo url found in environment variables. Skip cloning")
