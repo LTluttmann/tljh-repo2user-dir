@@ -7,7 +7,7 @@ import logging
 
 
 logger = logging.getLogger(__name__)
-flog = logging.FileHandler("/home/tdi2023/usrhooks.log")
+flog = logging.FileHandler("/home/tdi2023/plugin.log")
 flog.setFormatter(logging.Formatter("%(asctime)s %(message)s"))
 logger.addHandler(flog)
 logger.setLevel(logging.INFO)
@@ -35,6 +35,7 @@ def tljh_new_user_create(username):
     args: spawner is of type tljh UserCreateSpawner
     """
     logger.info("Gonna clone for user %s" % username)
+    logger.info("Following env vars are available %s" % os.environ)
     user_root_dir = os.path.join("/home", username)
     # get repo url from environment variable
     git_url = os.getenv("REPO_URL", "https://github.com/LTluttmann/tljh-repo2user-dir.git")
